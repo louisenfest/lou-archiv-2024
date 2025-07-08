@@ -17,7 +17,7 @@ jobs:
           mkdir -p public
           echo '{ "images": [' > public/gallery.json
           for f in media/*; do
-            echo "  \"https://louisenfest.github.io/lou-archiv-2025/$f\"," >> public/gallery.json
+            echo "  \"https://louisenfest.github.io/lou-archiv-2024/$f\"," >> public/gallery.json
           done
           sed -i '$ s/,$//' public/gallery.json
           echo ']}' >> public/gallery.json
